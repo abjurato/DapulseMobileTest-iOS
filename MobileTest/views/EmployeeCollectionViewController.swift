@@ -76,7 +76,10 @@ class EmployeeCollectionViewController: UICollectionViewController, UICollection
         guard let width = self.collectionView?.frame.width else {
             fatalError("Layout gone wrong")
         }
+        
+        // TODO: this can be improved
+        
         let cellWidth = width / 4.0
-        return .init(width: cellWidth, height: 2 * cellWidth)
+        return .init(width: cellWidth, height: 1.5 * cellWidth)
     }
 }
