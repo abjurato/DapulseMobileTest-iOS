@@ -34,19 +34,19 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="Taylor Swift" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKI-4Y-Ye9">
-                            <rect key="frame" x="105.5" y="40" width="89.5" height="20.5"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                            <rect key="frame" x="117" y="40" width="66.5" height="14.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="300" text="CTO" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bcx-XE-NGw">
-                            <rect key="frame" x="135" y="60.5" width="30.5" height="18"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                            <rect key="frame" x="138.5" y="54.5" width="23" height="13.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" translatesAutoresizingMaskIntoConstraints="NO" id="H7h-1a-7Wr">
-                            <rect key="frame" x="30" y="78.5" width="240" height="166.5"/>
+                            <rect key="frame" x="30" y="68" width="240" height="177"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>

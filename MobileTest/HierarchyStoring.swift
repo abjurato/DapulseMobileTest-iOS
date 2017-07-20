@@ -17,7 +17,7 @@ extension HierarchyStoring {
         let managers = sequence(first: self.manager, next: self.manager(of:)).flatMap{ $0 }.reversed()
         
         let hierarchy = managers.reduce("Company") { result, next -> String in
-            return result + ">" + next.department
+            return result + " → " + next.department
         }
         
         return hierarchy

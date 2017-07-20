@@ -106,8 +106,8 @@
 				D87DF2091F1FCAD600282E52 /* views */,
 				B04879A21E99160500346778 /* models */,
 				B048799C1E99128400346778 /* services */,
+				D83AFA1F1F20856300B552AE /* Helpers */,
 				B048798A1E99110A00346778 /* AppDelegate.swift */,
-				D8408AFF1F1FE63300ABD386 /* NibLoadable.swift */,
 				B04879911E99110A00346778 /* Assets.xcassets */,
 				D8408AFD1F1FDA6500ABD386 /* Main.storyboard */,
 				B04879931E99110A00346778 /* LaunchScreen.storyboard */,
@@ -139,9 +139,17 @@
 			children = (
 				B048798C1E99110A00346778 /* MainViewController.swift */,
 				D83AFA1A1F2073BB00B552AE /* DetailsViewController.swift */,
-				D83AFA1D1F20836800B552AE /* HierarchyStoring.swift */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		D83AFA1F1F20856300B552AE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D83AFA1D1F20836800B552AE /* HierarchyStoring.swift */,
+				D8408AFF1F1FE63300ABD386 /* NibLoadable.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		D87DF2091F1FCAD600282E52 /* views */ = {

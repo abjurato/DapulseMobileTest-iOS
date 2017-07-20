@@ -16,7 +16,7 @@ protocol EmployeesSource: class {
     func selected(at index: Int)
 }
 
-class EmployeeCollectionViewController: UICollectionViewController {
+class EmployeeCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     weak var dataSource: EmployeesSource!
     
     override func viewDidLoad() {
@@ -50,7 +50,20 @@ class EmployeeCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 didSelectItemAt indexPath: IndexPath)
+    {
         self.dataSource.selected(at: indexPath.row)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        guard let width = self.collectionView?.frame.width else {
+            fatalError("Layout gone wrong")
+        }
+        let cellWidth = width / 4.0
+        return .init(width: cellWidth, height: 2 * cellWidth)
     }
 }
