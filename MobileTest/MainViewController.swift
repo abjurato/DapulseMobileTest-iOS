@@ -15,6 +15,7 @@ class MainViewController: UIViewController, EmployeesSource, HierarchyStoring {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.heading.text = "LOADING..."
 
         func update(with employees: [Employee]) {
             self.employees = employees
