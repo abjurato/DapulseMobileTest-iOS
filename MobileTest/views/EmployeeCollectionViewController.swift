@@ -21,7 +21,20 @@ class EmployeeCollectionViewController: UICollectionViewController, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView?.register(EmployeeCollectionViewControllerCell.nib, forCellWithReuseIdentifier: String(describing: EmployeeCollectionViewControllerCell.self))
+        self.collectionView?.register(EmployeeCollectionViewControllerCell.nib,
+                                      forCellWithReuseIdentifier: String(describing: EmployeeCollectionViewControllerCell.self))
+        NotificationCenter.default.addObserver(forName: .UIDeviceOrientationDidChange, object: nil, queue: nil) { _ in
+            self.collectionViewLayout.invalidateLayout()
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.collectionViewLayout.invalidateLayout()
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

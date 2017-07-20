@@ -8,8 +8,8 @@ class CompanyService {
         return service
     }()
 
-    private let companyDataAPI = CompanyAPI()
-    private var company: Company!
+    fileprivate let companyDataAPI = CompanyAPI()
+    fileprivate var company: Company!
 
     private var queryQueue: OperationQueue = {
         let queue = OperationQueue()
@@ -46,12 +46,6 @@ class CompanyService {
         }
     }
     
-    /// Can be used after company loaded only
-    func getEmployee(forId employeeId: Int) -> Employee? {
-        let employees = self.company.employees.filter { $0.id == employeeId }
-        return employees.first
-    }
-
     func getTopLevelEmployees(completion: @escaping ([Employee])->()) {
         getEmployees(forManagerId: nil, completion: completion)
     }
@@ -60,5 +54,17 @@ class CompanyService {
         queryQueue.addOperation {
             self.companyDataAPI.avatar(from: url, completion: handler)
         }
+    }
+}
+
+/// Can be used after company and employees loaded and cached
+extension CompanyService {
+    func getEmployee(forId employeeId: Int) -> Employee? {
+        let employees = self.company?.employees.filter { $0.id == employeeId }
+        return employees?.first
+    }
+    
+    func getCompanyName() -> String? {
+        return self.company?.name
     }
 }

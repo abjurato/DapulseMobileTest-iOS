@@ -24,28 +24,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-rp-9yd">
-                                <rect key="frame" x="16" y="267" width="343" height="400"/>
+                                <rect key="frame" x="16" y="331.5" width="343" height="335.5"/>
                                 <connections>
                                     <segue destination="ADa-Gh-YVm" kind="embed" identifier="EmployeeCollectionViewController" id="VBI-eV-zTc"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employees" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pR-3c-TPY">
-                                <rect key="frame" x="16" y="238" width="83" height="20.5"/>
+                                <rect key="frame" x="16" y="302.5" width="83" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cik-RD-KrW">
-                                <rect key="frame" x="16" y="72" width="343" height="166"/>
+                                <rect key="frame" x="16" y="72" width="343" height="222.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT0-Wv-9hH">
-                                        <rect key="frame" x="130" y="0.0" width="83" height="40.5"/>
+                                        <rect key="frame" x="130" y="0.0" width="83" height="27.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1n-yQ-zFW" customClass="EmployeeView" customModule="MobileTest" customModuleProvider="target">
-                                        <rect key="frame" x="51.5" y="40.5" width="240" height="125.5"/>
+                                        <rect key="frame" x="51.5" y="27.5" width="240" height="195"/>
                                         <color key="backgroundColor" red="0.8215116831" green="0.4716232903" blue="0.88085343839999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
@@ -54,12 +54,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n0g-rp-9yd" firstAttribute="top" secondItem="2pR-3c-TPY" secondAttribute="bottom" constant="8" symbolic="YES" id="Cjj-v6-6d4"/>
-                            <constraint firstItem="2pR-3c-TPY" firstAttribute="top" secondItem="Cik-RD-KrW" secondAttribute="bottom" id="Hdc-w4-9mQ"/>
+                            <constraint firstItem="2pR-3c-TPY" firstAttribute="top" secondItem="Cik-RD-KrW" secondAttribute="bottom" constant="8" symbolic="YES" id="Hdc-w4-9mQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cik-RD-KrW" secondAttribute="trailing" id="VK8-yk-XIU"/>
                             <constraint firstItem="Cik-RD-KrW" firstAttribute="leading" secondItem="NcQ-ev-vLy" secondAttribute="leadingMargin" id="W0u-DW-TK0"/>
+                            <constraint firstItem="Cik-RD-KrW" firstAttribute="height" secondItem="NcQ-ev-vLy" secondAttribute="height" multiplier="1/3" id="XT5-a3-Apm"/>
                             <constraint firstItem="n0g-rp-9yd" firstAttribute="leading" secondItem="NcQ-ev-vLy" secondAttribute="leadingMargin" id="aRA-gx-mmJ"/>
                             <constraint firstItem="9nY-4Z-3ul" firstAttribute="top" secondItem="n0g-rp-9yd" secondAttribute="bottom" id="au6-3S-sNK"/>
-                            <constraint firstItem="n0g-rp-9yd" firstAttribute="height" secondItem="NcQ-ev-vLy" secondAttribute="height" multiplier="3/5" id="cZO-LL-xzn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n0g-rp-9yd" secondAttribute="trailing" id="oX8-rY-UX9"/>
                             <constraint firstItem="Cik-RD-KrW" firstAttribute="top" secondItem="e1R-uG-v6h" secondAttribute="bottom" constant="8" symbolic="YES" id="rBa-jx-Uqt"/>
                             <constraint firstItem="n0g-rp-9yd" firstAttribute="leading" secondItem="2pR-3c-TPY" secondAttribute="leading" symbolic="YES" id="s48-hn-hDR"/>
@@ -164,7 +164,7 @@
             <objects>
                 <collectionViewController id="ADa-Gh-YVm" customClass="EmployeeCollectionViewController" customModule="MobileTest" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="czv-5u-hAp">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="335.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tC7-Xh-3nz">

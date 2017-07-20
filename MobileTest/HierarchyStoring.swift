@@ -15,12 +15,7 @@ protocol HierarchyStoring {
 extension HierarchyStoring {
     func hierarchyString() -> String? {
         let managers = sequence(first: self.manager, next: self.manager(of:)).flatMap{ $0 }.reversed()
-        
-        let hierarchy = managers.reduce("Company") { result, next -> String in
-            return result + " → " + next.department
-        }
-        
-        return hierarchy
+        return managers.reduce(self.companyService.getCompanyName() ?? "Company") { $0 + " → " + $1.department }
     }
     
     func manager(of employee: Employee?) -> Employee? {
