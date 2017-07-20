@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class CompanyService {
 
@@ -45,8 +45,20 @@ class CompanyService {
             }
         }
     }
+    
+    /// Can be used after company loaded only
+    func getEmployee(forId employeeId: Int) -> Employee? {
+        let employees = self.company.employees.filter { $0.id == employeeId }
+        return employees.first
+    }
 
     func getTopLevelEmployees(completion: @escaping ([Employee])->()) {
         getEmployees(forManagerId: nil, completion: completion)
+    }
+    
+    func getAvatar(from url: URL, into handler: @escaping (UIImage?)->Void) {
+        queryQueue.addOperation {
+            self.companyDataAPI.avatar(from: url, completion: handler)
+        }
     }
 }

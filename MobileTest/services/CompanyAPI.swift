@@ -24,4 +24,18 @@ class CompanyAPI: CompanyAPIType {
 
         }
     }
+    
+    func avatar(from url: URL, completion: @escaping (UIImage?)->Void) {
+        Alamofire.request(url).validate().responseData { response in
+            guard response.result.isSuccess,
+                let data = response.value,
+                let image = UIImage(data: data) else
+            {
+                completion(nil)
+                return
+            }
+            
+            completion(image)
+        }
+    }
 }

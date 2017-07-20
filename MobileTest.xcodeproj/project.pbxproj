@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B048798B1E99110A00346778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B048798A1E99110A00346778 /* AppDelegate.swift */; };
-		B048798D1E99110A00346778 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B048798C1E99110A00346778 /* ViewController.swift */; };
+		B048798D1E99110A00346778 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B048798C1E99110A00346778 /* MainViewController.swift */; };
 		B04879921E99110A00346778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04879911E99110A00346778 /* Assets.xcassets */; };
 		B04879951E99110A00346778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04879931E99110A00346778 /* LaunchScreen.storyboard */; };
 		B048799F1E9912ED00346778 /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B048799E1E9912ED00346778 /* CompanyService.swift */; };
 		B04879A11E9915E000346778 /* CompanyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04879A01E9915E000346778 /* CompanyAPI.swift */; };
 		B04879A41E99161A00346778 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04879A31E99161A00346778 /* Company.swift */; };
 		B04879A61E99162200346778 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04879A51E99162200346778 /* Employee.swift */; };
+		D83AFA1B1F2073BB00B552AE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83AFA1A1F2073BB00B552AE /* DetailsViewController.swift */; };
+		D83AFA1E1F20836800B552AE /* HierarchyStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83AFA1D1F20836800B552AE /* HierarchyStoring.swift */; };
+		D8408AFE1F1FDA6500ABD386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8408AFD1F1FDA6500ABD386 /* Main.storyboard */; };
+		D8408B001F1FE63300ABD386 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8408AFF1F1FE63300ABD386 /* NibLoadable.swift */; };
+		D867A1C51F1FD067005BB6E7 /* EmployeeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867A1C41F1FD067005BB6E7 /* EmployeeCollectionViewController.swift */; };
+		D867A1C81F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D867A1C61F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.swift */; };
+		D867A1C91F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D867A1C71F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.xib */; };
+		D87DF20B1F1FCB0400282E52 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87DF20A1F1FCB0400282E52 /* EmployeeView.swift */; };
+		D87DF20D1F1FCB1C00282E52 /* EmployeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87DF20C1F1FCB1C00282E52 /* EmployeeView.xib */; };
 		DE10AF3ACF46DF6B2FB53BC0 /* Pods_MobileTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6010086C3FFAA751F267E517 /* Pods_MobileTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +33,7 @@
 		7A33E8D9F496D760323F8AA0 /* Pods-MobileTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileTest/Pods-MobileTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B04879871E99110A00346778 /* MobileTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B048798A1E99110A00346778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B048798C1E99110A00346778 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B048798C1E99110A00346778 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B04879911E99110A00346778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04879941E99110A00346778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04879961E99110A00346778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +41,15 @@
 		B04879A01E9915E000346778 /* CompanyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyAPI.swift; sourceTree = "<group>"; };
 		B04879A31E99161A00346778 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		B04879A51E99162200346778 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		D83AFA1A1F2073BB00B552AE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D83AFA1D1F20836800B552AE /* HierarchyStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyStoring.swift; sourceTree = "<group>"; };
+		D8408AFD1F1FDA6500ABD386 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D8408AFF1F1FE63300ABD386 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		D867A1C41F1FD067005BB6E7 /* EmployeeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeeCollectionViewController.swift; path = views/EmployeeCollectionViewController.swift; sourceTree = "<group>"; };
+		D867A1C61F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeeCollectionViewControllerCell.swift; path = views/EmployeeCollectionViewControllerCell.swift; sourceTree = "<group>"; };
+		D867A1C71F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmployeeCollectionViewControllerCell.xib; path = views/EmployeeCollectionViewControllerCell.xib; sourceTree = "<group>"; };
+		D87DF20A1F1FCB0400282E52 /* EmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeeView.swift; path = views/EmployeeView.swift; sourceTree = "<group>"; };
+		D87DF20C1F1FCB1C00282E52 /* EmployeeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmployeeView.xib; path = views/EmployeeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +102,14 @@
 		B04879891E99110A00346778 /* MobileTest */ = {
 			isa = PBXGroup;
 			children = (
+				D83AFA1C1F2073C400B552AE /* controllers */,
+				D87DF2091F1FCAD600282E52 /* views */,
 				B04879A21E99160500346778 /* models */,
 				B048799C1E99128400346778 /* services */,
 				B048798A1E99110A00346778 /* AppDelegate.swift */,
-				B048798C1E99110A00346778 /* ViewController.swift */,
+				D8408AFF1F1FE63300ABD386 /* NibLoadable.swift */,
 				B04879911E99110A00346778 /* Assets.xcassets */,
+				D8408AFD1F1FDA6500ABD386 /* Main.storyboard */,
 				B04879931E99110A00346778 /* LaunchScreen.storyboard */,
 				B04879961E99110A00346778 /* Info.plist */,
 			);
@@ -111,6 +132,28 @@
 				B04879A51E99162200346778 /* Employee.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		D83AFA1C1F2073C400B552AE /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B048798C1E99110A00346778 /* MainViewController.swift */,
+				D83AFA1A1F2073BB00B552AE /* DetailsViewController.swift */,
+				D83AFA1D1F20836800B552AE /* HierarchyStoring.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		D87DF2091F1FCAD600282E52 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D87DF20A1F1FCB0400282E52 /* EmployeeView.swift */,
+				D87DF20C1F1FCB1C00282E52 /* EmployeeView.xib */,
+				D867A1C61F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.swift */,
+				D867A1C71F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.xib */,
+				D867A1C41F1FD067005BB6E7 /* EmployeeCollectionViewController.swift */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +191,8 @@
 				TargetAttributes = {
 					B04879861E99110A00346778 = {
 						CreatedOnToolsVersion = 8.3.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 9C5DQPPE72;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -175,6 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D867A1C91F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.xib in Resources */,
+				D8408AFE1F1FDA6500ABD386 /* Main.storyboard in Resources */,
+				D87DF20D1F1FCB1C00282E52 /* EmployeeView.xib in Resources */,
 				B04879951E99110A00346778 /* LaunchScreen.storyboard in Resources */,
 				B04879921E99110A00346778 /* Assets.xcassets in Resources */,
 			);
@@ -225,7 +272,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -237,9 +284,15 @@
 			files = (
 				B04879A11E9915E000346778 /* CompanyAPI.swift in Sources */,
 				B04879A61E99162200346778 /* Employee.swift in Sources */,
-				B048798D1E99110A00346778 /* ViewController.swift in Sources */,
+				D83AFA1E1F20836800B552AE /* HierarchyStoring.swift in Sources */,
+				D87DF20B1F1FCB0400282E52 /* EmployeeView.swift in Sources */,
+				D83AFA1B1F2073BB00B552AE /* DetailsViewController.swift in Sources */,
+				D8408B001F1FE63300ABD386 /* NibLoadable.swift in Sources */,
+				B048798D1E99110A00346778 /* MainViewController.swift in Sources */,
+				D867A1C51F1FD067005BB6E7 /* EmployeeCollectionViewController.swift in Sources */,
 				B048799F1E9912ED00346778 /* CompanyService.swift in Sources */,
 				B04879A41E99161A00346778 /* Company.swift in Sources */,
+				D867A1C81F1FD1C4005BB6E7 /* EmployeeCollectionViewControllerCell.swift in Sources */,
 				B048798B1E99110A00346778 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,8 +408,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A33E8D9F496D760323F8AA0 /* Pods-MobileTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9C5DQPPE72;
 				INFOPLIST_FILE = MobileTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dapulse.MobileTest;
@@ -370,8 +425,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EB1853B3F03B2E8D64E90A8 /* Pods-MobileTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9C5DQPPE72;
 				INFOPLIST_FILE = MobileTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dapulse.MobileTest;

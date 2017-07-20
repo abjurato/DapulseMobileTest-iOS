@@ -23,3 +23,9 @@ struct Employee {
         self.profilePic = json["profile_pic"].stringValue
     }
 }
+
+extension Employee: Equatable {
+    static func ==(lhs: Employee, rhs: Employee) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
